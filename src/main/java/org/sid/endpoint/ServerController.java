@@ -50,8 +50,8 @@ public class ServerController {
                         .timeStamp(now())
                         .data(of("servers",serverService.get(id)))
                         .message("server retrieved")
-                        .status(CREATED)
-                        .statusCode(CREATED.value())
+                        .status(OK)
+                        .statusCode(OK.value())
                         .build()
         );
     }
